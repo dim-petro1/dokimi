@@ -29,459 +29,485 @@ namespace SmartCampingApp
         /// </summary>
         private void InitializeComponent()
         {
-
-// πρόσθεσε τον καμβά στο tab
-            this.tabMain = new System.Windows.Forms.TabControl();
-            this.tabSetup = new System.Windows.Forms.TabPage();
-            this.btnEvaluateSpot = new System.Windows.Forms.Button();
-            this.lblSetupStatus = new System.Windows.Forms.Label();
-            this.tabLighting = new System.Windows.Forms.TabPage();
-            this.lblBrightness = new System.Windows.Forms.Label();
-            this.trkBrightness = new System.Windows.Forms.TrackBar();
-            this.cmbColor = new System.Windows.Forms.ComboBox();
-            this.lblColor = new System.Windows.Forms.Label();
-            this.tabEnergy = new System.Windows.Forms.TabPage();
-            this.pbBattery = new System.Windows.Forms.ProgressBar();
-            this.btnSavingMode = new System.Windows.Forms.Button();
-            this.lblPv = new System.Windows.Forms.Label();
-            this.lblLoad = new System.Windows.Forms.Label();
-            this.tabWeather = new System.Windows.Forms.TabPage();
-            this.lblTemp = new System.Windows.Forms.Label();
-            this.lblHumidity = new System.Windows.Forms.Label();
-            this.lblWind = new System.Windows.Forms.Label();
-            this.btnSuggestActions = new System.Windows.Forms.Button();
-            this.tabShelter = new System.Windows.Forms.TabPage();
-            this.cmbRoute = new System.Windows.Forms.ComboBox();
-            this.btnNavigate = new System.Windows.Forms.Button();
-            this.tabTourism = new System.Windows.Forms.TabPage();
-            this.lstPOIs = new System.Windows.Forms.ListBox();
-            this.btnGoPOI = new System.Windows.Forms.Button();
-            this.tabOrders = new System.Windows.Forms.TabPage();
-            this.lstOrders = new System.Windows.Forms.ListBox();
-            this.btnOrder = new System.Windows.Forms.Button();
-            this.tabEvents = new System.Windows.Forms.TabPage();
-            this.lstEvents = new System.Windows.Forms.ListBox();
-            this.btnJoinEvent = new System.Windows.Forms.Button();
-            this.tabSettings = new System.Windows.Forms.TabPage();
-            this.btnHelp = new System.Windows.Forms.Button();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolBattery = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolWeather = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tabMain.SuspendLayout();
-            this.tabSetup.SuspendLayout();
-            this.tabLighting.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trkBrightness)).BeginInit();
-            this.tabEnergy.SuspendLayout();
-            this.tabWeather.SuspendLayout();
-            this.tabShelter.SuspendLayout();
-            this.tabTourism.SuspendLayout();
-            this.tabOrders.SuspendLayout();
-            this.tabEvents.SuspendLayout();
-            this.tabSettings.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            this.SuspendLayout();
+            tabMain = new TabControl();
+            tabSetup = new TabPage();
+            btnEvaluateSpot = new Button();
+            lblSetupStatus = new Label();
+            tabLighting = new TabPage();
+            lblBrightness = new Label();
+            trkBrightness = new TrackBar();
+            cmbColor = new ComboBox();
+            lblColor = new Label();
+            tabEnergy = new TabPage();
+            pbBattery = new ProgressBar();
+            btnSavingMode = new Button();
+            lblPv = new Label();
+            lblLoad = new Label();
+            tabWeather = new TabPage();
+            btnSuggestActions = new Button();
+            lblWind = new Label();
+            lblHumidity = new Label();
+            lblTemp = new Label();
+            tabShelter = new TabPage();
+            cmbRoute = new ComboBox();
+            btnNavigate = new Button();
+            tabTourism = new TabPage();
+            lstPOIs = new ListBox();
+            btnGoPOI = new Button();
+            tabOrders = new TabPage();
+            lstOrders = new ListBox();
+            btnOrder = new Button();
+            tabEvents = new TabPage();
+            lstEvents = new ListBox();
+            btnJoinEvent = new Button();
+            tabSettings = new TabPage();
+            btnHelp = new Button();
+            statusStrip1 = new StatusStrip();
+            toolBattery = new ToolStripStatusLabel();
+            toolWeather = new ToolStripStatusLabel();
+            button1 = new Button();
+            tabMain.SuspendLayout();
+            tabSetup.SuspendLayout();
+            tabLighting.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)trkBrightness).BeginInit();
+            tabEnergy.SuspendLayout();
+            tabWeather.SuspendLayout();
+            tabShelter.SuspendLayout();
+            tabTourism.SuspendLayout();
+            tabOrders.SuspendLayout();
+            tabEvents.SuspendLayout();
+            tabSettings.SuspendLayout();
+            statusStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // tabMain
             // 
-            this.tabMain.Controls.Add(this.tabSetup);
-            this.tabMain.Controls.Add(this.tabLighting);
-            this.tabMain.Controls.Add(this.tabEnergy);
-            this.tabMain.Controls.Add(this.tabWeather);
-            this.tabMain.Controls.Add(this.tabShelter);
-            this.tabMain.Controls.Add(this.tabTourism);
-            this.tabMain.Controls.Add(this.tabOrders);
-            this.tabMain.Controls.Add(this.tabEvents);
-            this.tabMain.Controls.Add(this.tabSettings);
-            this.tabMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabMain.Location = new System.Drawing.Point(0, 0);
-            this.tabMain.Name = "tabMain";
-            this.tabMain.SelectedIndex = 0;
-            this.tabMain.Size = new System.Drawing.Size(984, 561);
-            this.tabMain.TabIndex = 0;
+            tabMain.Controls.Add(tabSetup);
+            tabMain.Controls.Add(tabLighting);
+            tabMain.Controls.Add(tabEnergy);
+            tabMain.Controls.Add(tabWeather);
+            tabMain.Controls.Add(tabShelter);
+            tabMain.Controls.Add(tabTourism);
+            tabMain.Controls.Add(tabOrders);
+            tabMain.Controls.Add(tabEvents);
+            tabMain.Controls.Add(tabSettings);
+            tabMain.Dock = DockStyle.Fill;
+            tabMain.Location = new Point(0, 0);
+            tabMain.Margin = new Padding(3, 4, 3, 4);
+            tabMain.Name = "tabMain";
+            tabMain.SelectedIndex = 0;
+            tabMain.Size = new Size(1125, 748);
+            tabMain.TabIndex = 0;
             // 
             // tabSetup
             // 
-            this.tabSetup.Controls.Add(this.btnEvaluateSpot);
-            this.tabSetup.Controls.Add(this.lblSetupStatus);
-            this.tabSetup.Location = new System.Drawing.Point(4, 24);
-            this.tabSetup.Name = "tabSetup";
-            this.tabSetup.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSetup.Size = new System.Drawing.Size(976, 533);
-            this.tabSetup.TabIndex = 0;
-            this.tabSetup.Text = "🏕️ Στήσιμο";
-            this.tabSetup.UseVisualStyleBackColor = true;
+            tabSetup.Controls.Add(button1);
+            tabSetup.Controls.Add(btnEvaluateSpot);
+            tabSetup.Controls.Add(lblSetupStatus);
+            tabSetup.Location = new Point(4, 29);
+            tabSetup.Margin = new Padding(3, 4, 3, 4);
+            tabSetup.Name = "tabSetup";
+            tabSetup.Padding = new Padding(3, 4, 3, 4);
+            tabSetup.Size = new Size(1117, 715);
+            tabSetup.TabIndex = 0;
+            tabSetup.Text = "🏕️ Στήσιμο";
+            tabSetup.UseVisualStyleBackColor = true;
             // 
             // btnEvaluateSpot
             // 
-            this.btnEvaluateSpot.Location = new System.Drawing.Point(24, 22);
-            this.btnEvaluateSpot.Name = "btnEvaluateSpot";
-            this.btnEvaluateSpot.Size = new System.Drawing.Size(170, 30);
-            this.btnEvaluateSpot.TabIndex = 1;
-            this.btnEvaluateSpot.Text = "Αξιολόγηση Σημείου";
-            this.btnEvaluateSpot.UseVisualStyleBackColor = true;
-            this.btnEvaluateSpot.Click += new System.EventHandler(this.btnEvaluateSpot_Click);
+            btnEvaluateSpot.Location = new Point(27, 29);
+            btnEvaluateSpot.Margin = new Padding(3, 4, 3, 4);
+            btnEvaluateSpot.Name = "btnEvaluateSpot";
+            btnEvaluateSpot.Size = new Size(194, 40);
+            btnEvaluateSpot.TabIndex = 1;
+            btnEvaluateSpot.Text = "Αξιολόγηση Σημείου";
+            btnEvaluateSpot.UseVisualStyleBackColor = true;
+            btnEvaluateSpot.Click += btnEvaluateSpot_Click;
             // 
             // lblSetupStatus
             // 
-            this.lblSetupStatus.AutoSize = true;
-            this.lblSetupStatus.Location = new System.Drawing.Point(24, 67);
-            this.lblSetupStatus.Name = "lblSetupStatus";
-            this.lblSetupStatus.Size = new System.Drawing.Size(232, 15);
-            this.lblSetupStatus.TabIndex = 0;
-            this.lblSetupStatus.Text = "Κατάσταση: Δεν έχει ξεκινήσει το στήσιμο.";
+            lblSetupStatus.AutoSize = true;
+            lblSetupStatus.Location = new Point(27, 89);
+            lblSetupStatus.Name = "lblSetupStatus";
+            lblSetupStatus.Size = new Size(298, 20);
+            lblSetupStatus.TabIndex = 0;
+            lblSetupStatus.Text = "Κατάσταση: Δεν έχει ξεκινήσει το στήσιμο.";
             // 
             // tabLighting
             // 
-            this.tabLighting.Controls.Add(this.lblBrightness);
-            this.tabLighting.Controls.Add(this.trkBrightness);
-            this.tabLighting.Controls.Add(this.cmbColor);
-            this.tabLighting.Controls.Add(this.lblColor);
-            this.tabLighting.Location = new System.Drawing.Point(4, 24);
-            this.tabLighting.Name = "tabLighting";
-            this.tabLighting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLighting.Size = new System.Drawing.Size(976, 533);
-            this.tabLighting.TabIndex = 1;
-            this.tabLighting.Text = "💡 Φωτισμός";
-            this.tabLighting.UseVisualStyleBackColor = true;
+            tabLighting.Controls.Add(lblBrightness);
+            tabLighting.Controls.Add(trkBrightness);
+            tabLighting.Controls.Add(cmbColor);
+            tabLighting.Controls.Add(lblColor);
+            tabLighting.Location = new Point(4, 29);
+            tabLighting.Margin = new Padding(3, 4, 3, 4);
+            tabLighting.Name = "tabLighting";
+            tabLighting.Padding = new Padding(3, 4, 3, 4);
+            tabLighting.Size = new Size(1117, 715);
+            tabLighting.TabIndex = 1;
+            tabLighting.Text = "💡 Φωτισμός";
+            tabLighting.UseVisualStyleBackColor = true;
             // 
             // lblBrightness
             // 
-            this.lblBrightness.AutoSize = true;
-            this.lblBrightness.Location = new System.Drawing.Point(24, 92);
-            this.lblBrightness.Name = "lblBrightness";
-            this.lblBrightness.Size = new System.Drawing.Size(113, 15);
-            this.lblBrightness.TabIndex = 3;
-            this.lblBrightness.Text = "Ένταση: 40% (demo)";
+            lblBrightness.AutoSize = true;
+            lblBrightness.Location = new Point(27, 123);
+            lblBrightness.Name = "lblBrightness";
+            lblBrightness.Size = new Size(148, 20);
+            lblBrightness.TabIndex = 3;
+            lblBrightness.Text = "Ένταση: 40% (demo)";
             // 
             // trkBrightness
             // 
-            this.trkBrightness.Location = new System.Drawing.Point(24, 120);
-            this.trkBrightness.Maximum = 100;
-            this.trkBrightness.Name = "trkBrightness";
-            this.trkBrightness.Size = new System.Drawing.Size(300, 45);
-            this.trkBrightness.TabIndex = 2;
-            this.trkBrightness.TickFrequency = 10;
-            this.trkBrightness.Value = 40;
-            this.trkBrightness.Scroll += new System.EventHandler(this.trkBrightness_Scroll);
+            trkBrightness.Location = new Point(27, 160);
+            trkBrightness.Margin = new Padding(3, 4, 3, 4);
+            trkBrightness.Maximum = 100;
+            trkBrightness.Name = "trkBrightness";
+            trkBrightness.Size = new Size(343, 56);
+            trkBrightness.TabIndex = 2;
+            trkBrightness.TickFrequency = 10;
+            trkBrightness.Value = 40;
+            trkBrightness.Scroll += trkBrightness_Scroll;
             // 
             // cmbColor
             // 
-            this.cmbColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbColor.FormattingEnabled = true;
-            this.cmbColor.Items.AddRange(new object[] {
-            "Cozy",
-            "Reading",
-            "Night",
-            "Party"});
-            this.cmbColor.Location = new System.Drawing.Point(24, 48);
-            this.cmbColor.Name = "cmbColor";
-            this.cmbColor.Size = new System.Drawing.Size(180, 23);
-            this.cmbColor.TabIndex = 1;
-            this.cmbColor.SelectedIndexChanged += new System.EventHandler(this.cmbColor_SelectedIndexChanged);
+            cmbColor.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbColor.FormattingEnabled = true;
+            cmbColor.Items.AddRange(new object[] { "Cozy", "Reading", "Night", "Party" });
+            cmbColor.Location = new Point(27, 64);
+            cmbColor.Margin = new Padding(3, 4, 3, 4);
+            cmbColor.Name = "cmbColor";
+            cmbColor.Size = new Size(205, 28);
+            cmbColor.TabIndex = 1;
+            cmbColor.SelectedIndexChanged += cmbColor_SelectedIndexChanged;
             // 
             // lblColor
             // 
-            this.lblColor.AutoSize = true;
-            this.lblColor.Location = new System.Drawing.Point(24, 22);
-            this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(190, 15);
-            this.lblColor.TabIndex = 0;
-            this.lblColor.Text = "Προκαθορισμένο χρώμα φωτισμού";
+            lblColor.AutoSize = true;
+            lblColor.Location = new Point(27, 29);
+            lblColor.Name = "lblColor";
+            lblColor.Size = new Size(251, 20);
+            lblColor.TabIndex = 0;
+            lblColor.Text = "Προκαθορισμένο χρώμα φωτισμού";
             // 
             // tabEnergy
             // 
-            this.tabEnergy.Controls.Add(this.pbBattery);
-            this.tabEnergy.Controls.Add(this.btnSavingMode);
-            this.tabEnergy.Controls.Add(this.lblPv);
-            this.tabEnergy.Controls.Add(this.lblLoad);
-            this.tabEnergy.Location = new System.Drawing.Point(4, 24);
-            this.tabEnergy.Name = "tabEnergy";
-            this.tabEnergy.Size = new System.Drawing.Size(976, 533);
-            this.tabEnergy.TabIndex = 2;
-            this.tabEnergy.Text = "🔋 Ενέργεια";
-            this.tabEnergy.UseVisualStyleBackColor = true;
+            tabEnergy.Controls.Add(pbBattery);
+            tabEnergy.Controls.Add(btnSavingMode);
+            tabEnergy.Controls.Add(lblPv);
+            tabEnergy.Controls.Add(lblLoad);
+            tabEnergy.Location = new Point(4, 29);
+            tabEnergy.Margin = new Padding(3, 4, 3, 4);
+            tabEnergy.Name = "tabEnergy";
+            tabEnergy.Size = new Size(1117, 715);
+            tabEnergy.TabIndex = 2;
+            tabEnergy.Text = "🔋 Ενέργεια";
+            tabEnergy.UseVisualStyleBackColor = true;
             // 
             // pbBattery
             // 
-            this.pbBattery.Location = new System.Drawing.Point(24, 98);
-            this.pbBattery.Name = "pbBattery";
-            this.pbBattery.Size = new System.Drawing.Size(300, 23);
-            this.pbBattery.TabIndex = 3;
+            pbBattery.Location = new Point(27, 131);
+            pbBattery.Margin = new Padding(3, 4, 3, 4);
+            pbBattery.Name = "pbBattery";
+            pbBattery.Size = new Size(343, 31);
+            pbBattery.TabIndex = 3;
             // 
             // btnSavingMode
             // 
-            this.btnSavingMode.Location = new System.Drawing.Point(24, 136);
-            this.btnSavingMode.Name = "btnSavingMode";
-            this.btnSavingMode.Size = new System.Drawing.Size(192, 30);
-            this.btnSavingMode.TabIndex = 2;
-            this.btnSavingMode.Text = "Λειτουργία Εξοικονόμησης";
-            this.btnSavingMode.UseVisualStyleBackColor = true;
-            this.btnSavingMode.Click += new System.EventHandler(this.btnSavingMode_Click);
+            btnSavingMode.Location = new Point(27, 181);
+            btnSavingMode.Margin = new Padding(3, 4, 3, 4);
+            btnSavingMode.Name = "btnSavingMode";
+            btnSavingMode.Size = new Size(219, 40);
+            btnSavingMode.TabIndex = 2;
+            btnSavingMode.Text = "Λειτουργία Εξοικονόμησης";
+            btnSavingMode.UseVisualStyleBackColor = true;
+            btnSavingMode.Click += btnSavingMode_Click;
             // 
             // lblPv
             // 
-            this.lblPv.AutoSize = true;
-            this.lblPv.Location = new System.Drawing.Point(24, 22);
-            this.lblPv.Name = "lblPv";
-            this.lblPv.Size = new System.Drawing.Size(156, 15);
-            this.lblPv.TabIndex = 1;
-            this.lblPv.Text = "Παραγωγή PV: 120W (demo)";
+            lblPv.AutoSize = true;
+            lblPv.Location = new Point(27, 29);
+            lblPv.Name = "lblPv";
+            lblPv.Size = new Size(203, 20);
+            lblPv.TabIndex = 1;
+            lblPv.Text = "Παραγωγή PV: 120W (demo)";
             // 
             // lblLoad
             // 
-            this.lblLoad.AutoSize = true;
-            this.lblLoad.Location = new System.Drawing.Point(24, 58);
-            this.lblLoad.Name = "lblLoad";
-            this.lblLoad.Size = new System.Drawing.Size(146, 15);
-            this.lblLoad.TabIndex = 0;
-            this.lblLoad.Text = "Κατανάλωση: 80W (demo)";
+            lblLoad.AutoSize = true;
+            lblLoad.Location = new Point(27, 77);
+            lblLoad.Name = "lblLoad";
+            lblLoad.Size = new Size(187, 20);
+            lblLoad.TabIndex = 0;
+            lblLoad.Text = "Κατανάλωση: 80W (demo)";
             // 
             // tabWeather
             // 
-            this.tabWeather.Controls.Add(this.btnSuggestActions);
-            this.tabWeather.Controls.Add(this.lblWind);
-            this.tabWeather.Controls.Add(this.lblHumidity);
-            this.tabWeather.Controls.Add(this.lblTemp);
-            this.tabWeather.Location = new System.Drawing.Point(4, 24);
-            this.tabWeather.Name = "tabWeather";
-            this.tabWeather.Size = new System.Drawing.Size(976, 533);
-            this.tabWeather.TabIndex = 3;
-            this.tabWeather.Text = "🌦️ Καιρός";
-            this.tabWeather.UseVisualStyleBackColor = true;
-            // 
-            // lblTemp
-            // 
-            this.lblTemp.AutoSize = true;
-            this.lblTemp.Location = new System.Drawing.Point(24, 22);
-            this.lblTemp.Name = "lblTemp";
-            this.lblTemp.Size = new System.Drawing.Size(120, 15);
-            this.lblTemp.TabIndex = 0;
-            this.lblTemp.Text = "Θερμοκρασία: 24°C";
-            // 
-            // lblHumidity
-            // 
-            this.lblHumidity.AutoSize = true;
-            this.lblHumidity.Location = new System.Drawing.Point(24, 54);
-            this.lblHumidity.Name = "lblHumidity";
-            this.lblHumidity.Size = new System.Drawing.Size(92, 15);
-            this.lblHumidity.TabIndex = 1;
-            this.lblHumidity.Text = "Υγρασία: 55%";
-            // 
-            // lblWind
-            // 
-            this.lblWind.AutoSize = true;
-            this.lblWind.Location = new System.Drawing.Point(24, 86);
-            this.lblWind.Name = "lblWind";
-            this.lblWind.Size = new System.Drawing.Size(103, 15);
-            this.lblWind.TabIndex = 2;
-            this.lblWind.Text = "Άνεμος: 10 km/h";
+            tabWeather.Controls.Add(btnSuggestActions);
+            tabWeather.Controls.Add(lblWind);
+            tabWeather.Controls.Add(lblHumidity);
+            tabWeather.Controls.Add(lblTemp);
+            tabWeather.Location = new Point(4, 29);
+            tabWeather.Margin = new Padding(3, 4, 3, 4);
+            tabWeather.Name = "tabWeather";
+            tabWeather.Size = new Size(1117, 715);
+            tabWeather.TabIndex = 3;
+            tabWeather.Text = "🌦️ Καιρός";
+            tabWeather.UseVisualStyleBackColor = true;
             // 
             // btnSuggestActions
             // 
-            this.btnSuggestActions.Location = new System.Drawing.Point(24, 120);
-            this.btnSuggestActions.Name = "btnSuggestActions";
-            this.btnSuggestActions.Size = new System.Drawing.Size(170, 30);
-            this.btnSuggestActions.TabIndex = 3;
-            this.btnSuggestActions.Text = "Πρότεινε ενέργειες";
-            this.btnSuggestActions.UseVisualStyleBackColor = true;
-            this.btnSuggestActions.Click += new System.EventHandler(this.btnSuggestActions_Click);
+            btnSuggestActions.Location = new Point(27, 160);
+            btnSuggestActions.Margin = new Padding(3, 4, 3, 4);
+            btnSuggestActions.Name = "btnSuggestActions";
+            btnSuggestActions.Size = new Size(194, 40);
+            btnSuggestActions.TabIndex = 3;
+            btnSuggestActions.Text = "Πρότεινε ενέργειες";
+            btnSuggestActions.UseVisualStyleBackColor = true;
+            btnSuggestActions.Click += btnSuggestActions_Click;
+            // 
+            // lblWind
+            // 
+            lblWind.AutoSize = true;
+            lblWind.Location = new Point(27, 115);
+            lblWind.Name = "lblWind";
+            lblWind.Size = new Size(120, 20);
+            lblWind.TabIndex = 2;
+            lblWind.Text = "Άνεμος: 10 km/h";
+            // 
+            // lblHumidity
+            // 
+            lblHumidity.AutoSize = true;
+            lblHumidity.Location = new Point(27, 72);
+            lblHumidity.Name = "lblHumidity";
+            lblHumidity.Size = new Size(100, 20);
+            lblHumidity.TabIndex = 1;
+            lblHumidity.Text = "Υγρασία: 55%";
+            // 
+            // lblTemp
+            // 
+            lblTemp.AutoSize = true;
+            lblTemp.Location = new Point(27, 29);
+            lblTemp.Name = "lblTemp";
+            lblTemp.Size = new Size(140, 20);
+            lblTemp.TabIndex = 0;
+            lblTemp.Text = "Θερμοκρασία: 24°C";
             // 
             // tabShelter
             // 
-            this.tabShelter.Controls.Add(this.cmbRoute);
-            this.tabShelter.Controls.Add(this.btnNavigate);
-            this.tabShelter.Location = new System.Drawing.Point(4, 24);
-            this.tabShelter.Name = "tabShelter";
-            this.tabShelter.Size = new System.Drawing.Size(976, 533);
-            this.tabShelter.TabIndex = 4;
-            this.tabShelter.Text = "🧭 Καταφύγιο";
-            this.tabShelter.UseVisualStyleBackColor = true;
+            tabShelter.Controls.Add(cmbRoute);
+            tabShelter.Controls.Add(btnNavigate);
+            tabShelter.Location = new Point(4, 29);
+            tabShelter.Margin = new Padding(3, 4, 3, 4);
+            tabShelter.Name = "tabShelter";
+            tabShelter.Size = new Size(1117, 715);
+            tabShelter.TabIndex = 4;
+            tabShelter.Text = "\U0001f9ed Καταφύγιο";
+            tabShelter.UseVisualStyleBackColor = true;
             // 
             // cmbRoute
             // 
-            this.cmbRoute.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbRoute.FormattingEnabled = true;
-            this.cmbRoute.Items.AddRange(new object[] {
-            "Ασφαλής",
-            "Σύντομη",
-            "Αποφυγή ανηφόρας"});
-            this.cmbRoute.Location = new System.Drawing.Point(24, 22);
-            this.cmbRoute.Name = "cmbRoute";
-            this.cmbRoute.Size = new System.Drawing.Size(200, 23);
-            this.cmbRoute.TabIndex = 1;
+            cmbRoute.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbRoute.FormattingEnabled = true;
+            cmbRoute.Items.AddRange(new object[] { "Ασφαλής", "Σύντομη", "Αποφυγή ανηφόρας" });
+            cmbRoute.Location = new Point(27, 29);
+            cmbRoute.Margin = new Padding(3, 4, 3, 4);
+            cmbRoute.Name = "cmbRoute";
+            cmbRoute.Size = new Size(228, 28);
+            cmbRoute.TabIndex = 1;
             // 
             // btnNavigate
             // 
-            this.btnNavigate.Location = new System.Drawing.Point(24, 58);
-            this.btnNavigate.Name = "btnNavigate";
-            this.btnNavigate.Size = new System.Drawing.Size(170, 30);
-            this.btnNavigate.TabIndex = 0;
-            this.btnNavigate.Text = "Πλοήγηση";
-            this.btnNavigate.UseVisualStyleBackColor = true;
-            this.btnNavigate.Click += new System.EventHandler(this.btnNavigate_Click);
+            btnNavigate.Location = new Point(27, 77);
+            btnNavigate.Margin = new Padding(3, 4, 3, 4);
+            btnNavigate.Name = "btnNavigate";
+            btnNavigate.Size = new Size(194, 40);
+            btnNavigate.TabIndex = 0;
+            btnNavigate.Text = "Πλοήγηση";
+            btnNavigate.UseVisualStyleBackColor = true;
+            btnNavigate.Click += btnNavigate_Click;
             // 
             // tabTourism
             // 
-            this.tabTourism.Controls.Add(this.lstPOIs);
-            this.tabTourism.Controls.Add(this.btnGoPOI);
-            this.tabTourism.Location = new System.Drawing.Point(4, 24);
-            this.tabTourism.Name = "tabTourism";
-            this.tabTourism.Size = new System.Drawing.Size(976, 533);
-            this.tabTourism.TabIndex = 5;
-            this.tabTourism.Text = "🗺️ Τουρισμός";
-            this.tabTourism.UseVisualStyleBackColor = true;
+            tabTourism.Controls.Add(lstPOIs);
+            tabTourism.Controls.Add(btnGoPOI);
+            tabTourism.Location = new Point(4, 29);
+            tabTourism.Margin = new Padding(3, 4, 3, 4);
+            tabTourism.Name = "tabTourism";
+            tabTourism.Size = new Size(1117, 715);
+            tabTourism.TabIndex = 5;
+            tabTourism.Text = "🗺️ Τουρισμός";
+            tabTourism.UseVisualStyleBackColor = true;
             // 
             // lstPOIs
             // 
-            this.lstPOIs.FormattingEnabled = true;
-            this.lstPOIs.ItemHeight = 15;
-            this.lstPOIs.Location = new System.Drawing.Point(24, 22);
-            this.lstPOIs.Name = "lstPOIs";
-            this.lstPOIs.Size = new System.Drawing.Size(260, 214);
-            this.lstPOIs.TabIndex = 1;
+            lstPOIs.FormattingEnabled = true;
+            lstPOIs.Location = new Point(27, 29);
+            lstPOIs.Margin = new Padding(3, 4, 3, 4);
+            lstPOIs.Name = "lstPOIs";
+            lstPOIs.Size = new Size(297, 284);
+            lstPOIs.TabIndex = 1;
             // 
             // btnGoPOI
             // 
-            this.btnGoPOI.Location = new System.Drawing.Point(24, 250);
-            this.btnGoPOI.Name = "btnGoPOI";
-            this.btnGoPOI.Size = new System.Drawing.Size(170, 30);
-            this.btnGoPOI.TabIndex = 0;
-            this.btnGoPOI.Text = "Πήγαινε";
-            this.btnGoPOI.UseVisualStyleBackColor = true;
-            this.btnGoPOI.Click += new System.EventHandler(this.btnGoPOI_Click);
+            btnGoPOI.Location = new Point(27, 333);
+            btnGoPOI.Margin = new Padding(3, 4, 3, 4);
+            btnGoPOI.Name = "btnGoPOI";
+            btnGoPOI.Size = new Size(194, 40);
+            btnGoPOI.TabIndex = 0;
+            btnGoPOI.Text = "Πήγαινε";
+            btnGoPOI.UseVisualStyleBackColor = true;
+            btnGoPOI.Click += btnGoPOI_Click;
             // 
             // tabOrders
             // 
-            this.tabOrders.Controls.Add(this.lstOrders);
-            this.tabOrders.Controls.Add(this.btnOrder);
-            this.tabOrders.Location = new System.Drawing.Point(4, 24);
-            this.tabOrders.Name = "tabOrders";
-            this.tabOrders.Size = new System.Drawing.Size(976, 533);
-            this.tabOrders.TabIndex = 6;
-            this.tabOrders.Text = "🍽️ Παραγγελίες";
-            this.tabOrders.UseVisualStyleBackColor = true;
+            tabOrders.Controls.Add(lstOrders);
+            tabOrders.Controls.Add(btnOrder);
+            tabOrders.Location = new Point(4, 29);
+            tabOrders.Margin = new Padding(3, 4, 3, 4);
+            tabOrders.Name = "tabOrders";
+            tabOrders.Size = new Size(1117, 715);
+            tabOrders.TabIndex = 6;
+            tabOrders.Text = "🍽️ Παραγγελίες";
+            tabOrders.UseVisualStyleBackColor = true;
             // 
             // lstOrders
             // 
-            this.lstOrders.FormattingEnabled = true;
-            this.lstOrders.ItemHeight = 15;
-            this.lstOrders.Location = new System.Drawing.Point(24, 22);
-            this.lstOrders.Name = "lstOrders";
-            this.lstOrders.Size = new System.Drawing.Size(300, 214);
-            this.lstOrders.TabIndex = 1;
+            lstOrders.FormattingEnabled = true;
+            lstOrders.Location = new Point(27, 29);
+            lstOrders.Margin = new Padding(3, 4, 3, 4);
+            lstOrders.Name = "lstOrders";
+            lstOrders.Size = new Size(342, 284);
+            lstOrders.TabIndex = 1;
             // 
             // btnOrder
             // 
-            this.btnOrder.Location = new System.Drawing.Point(24, 250);
-            this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(170, 30);
-            this.btnOrder.TabIndex = 0;
-            this.btnOrder.Text = "Παράγγειλε (demo)";
-            this.btnOrder.UseVisualStyleBackColor = true;
-            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
+            btnOrder.Location = new Point(27, 333);
+            btnOrder.Margin = new Padding(3, 4, 3, 4);
+            btnOrder.Name = "btnOrder";
+            btnOrder.Size = new Size(194, 40);
+            btnOrder.TabIndex = 0;
+            btnOrder.Text = "Παράγγειλε (demo)";
+            btnOrder.UseVisualStyleBackColor = true;
+            btnOrder.Click += btnOrder_Click;
             // 
             // tabEvents
             // 
-            this.tabEvents.Controls.Add(this.lstEvents);
-            this.tabEvents.Controls.Add(this.btnJoinEvent);
-            this.tabEvents.Location = new System.Drawing.Point(4, 24);
-            this.tabEvents.Name = "tabEvents";
-            this.tabEvents.Size = new System.Drawing.Size(976, 533);
-            this.tabEvents.TabIndex = 7;
-            this.tabEvents.Text = "🎟️ Εκδηλώσεις";
-            this.tabEvents.UseVisualStyleBackColor = true;
+            tabEvents.Controls.Add(lstEvents);
+            tabEvents.Controls.Add(btnJoinEvent);
+            tabEvents.Location = new Point(4, 29);
+            tabEvents.Margin = new Padding(3, 4, 3, 4);
+            tabEvents.Name = "tabEvents";
+            tabEvents.Size = new Size(1117, 715);
+            tabEvents.TabIndex = 7;
+            tabEvents.Text = "🎟️ Εκδηλώσεις";
+            tabEvents.UseVisualStyleBackColor = true;
             // 
             // lstEvents
             // 
-            this.lstEvents.FormattingEnabled = true;
-            this.lstEvents.ItemHeight = 15;
-            this.lstEvents.Location = new System.Drawing.Point(24, 22);
-            this.lstEvents.Name = "lstEvents";
-            this.lstEvents.Size = new System.Drawing.Size(320, 214);
-            this.lstEvents.TabIndex = 1;
+            lstEvents.FormattingEnabled = true;
+            lstEvents.Location = new Point(27, 29);
+            lstEvents.Margin = new Padding(3, 4, 3, 4);
+            lstEvents.Name = "lstEvents";
+            lstEvents.Size = new Size(365, 284);
+            lstEvents.TabIndex = 1;
             // 
             // btnJoinEvent
             // 
-            this.btnJoinEvent.Location = new System.Drawing.Point(24, 250);
-            this.btnJoinEvent.Name = "btnJoinEvent";
-            this.btnJoinEvent.Size = new System.Drawing.Size(170, 30);
-            this.btnJoinEvent.TabIndex = 0;
-            this.btnJoinEvent.Text = "Δήλωση συμμετοχής";
-            this.btnJoinEvent.UseVisualStyleBackColor = true;
-            this.btnJoinEvent.Click += new System.EventHandler(this.btnJoinEvent_Click);
+            btnJoinEvent.Location = new Point(27, 333);
+            btnJoinEvent.Margin = new Padding(3, 4, 3, 4);
+            btnJoinEvent.Name = "btnJoinEvent";
+            btnJoinEvent.Size = new Size(194, 40);
+            btnJoinEvent.TabIndex = 0;
+            btnJoinEvent.Text = "Δήλωση συμμετοχής";
+            btnJoinEvent.UseVisualStyleBackColor = true;
+            btnJoinEvent.Click += btnJoinEvent_Click;
             // 
             // tabSettings
             // 
-            this.tabSettings.Controls.Add(this.btnHelp);
-            this.tabSettings.Location = new System.Drawing.Point(4, 24);
-            this.tabSettings.Name = "tabSettings";
-            this.tabSettings.Size = new System.Drawing.Size(976, 533);
-            this.tabSettings.TabIndex = 8;
-            this.tabSettings.Text = "⚙️ Ρυθμίσεις & Βοήθεια";
-            this.tabSettings.UseVisualStyleBackColor = true;
+            tabSettings.Controls.Add(btnHelp);
+            tabSettings.Location = new Point(4, 29);
+            tabSettings.Margin = new Padding(3, 4, 3, 4);
+            tabSettings.Name = "tabSettings";
+            tabSettings.Size = new Size(1117, 715);
+            tabSettings.TabIndex = 8;
+            tabSettings.Text = "⚙️ Ρυθμίσεις & Βοήθεια";
+            tabSettings.UseVisualStyleBackColor = true;
             // 
             // btnHelp
             // 
-            this.btnHelp.Location = new System.Drawing.Point(24, 22);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(170, 30);
-            this.btnHelp.TabIndex = 0;
-            this.btnHelp.Text = "Help (online)";
-            this.btnHelp.UseVisualStyleBackColor = true;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            btnHelp.Location = new Point(27, 29);
+            btnHelp.Margin = new Padding(3, 4, 3, 4);
+            btnHelp.Name = "btnHelp";
+            btnHelp.Size = new Size(194, 40);
+            btnHelp.TabIndex = 0;
+            btnHelp.Text = "Help (online)";
+            btnHelp.UseVisualStyleBackColor = true;
+            btnHelp.Click += btnHelp_Click;
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolBattery,
-            this.toolWeather});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 539);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(984, 22);
-            this.statusStrip1.TabIndex = 1;
+            statusStrip1.ImageScalingSize = new Size(20, 20);
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolBattery, toolWeather });
+            statusStrip1.Location = new Point(0, 722);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Padding = new Padding(1, 0, 16, 0);
+            statusStrip1.Size = new Size(1125, 26);
+            statusStrip1.TabIndex = 1;
             // 
             // toolBattery
             // 
-            this.toolBattery.Name = "toolBattery";
-            this.toolBattery.Size = new System.Drawing.Size(113, 17);
-            this.toolBattery.Text = "🔋 Μπαταρία: 72%";
+            toolBattery.Name = "toolBattery";
+            toolBattery.Size = new Size(131, 20);
+            toolBattery.Text = "🔋 Μπαταρία: 72%";
             // 
             // toolWeather
             // 
-            this.toolWeather.Name = "toolWeather";
-            this.toolWeather.Size = new System.Drawing.Size(129, 17);
-            this.toolWeather.Text = "🌦️ 24°C | 10 km/h";
+            toolWeather.Name = "toolWeather";
+            toolWeather.Size = new Size(131, 20);
+            toolWeather.Text = "🌦️ 24°C | 10 km/h";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(463, 217);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 2;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.tabMain);
-            this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Έξυπνο Camping — Προσομοίωση";
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            this.tabMain.ResumeLayout(false);
-            this.tabSetup.ResumeLayout(false);
-            this.tabSetup.PerformLayout();
-            this.tabLighting.ResumeLayout(false);
-            this.tabLighting.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trkBrightness)).EndInit();
-            this.tabEnergy.ResumeLayout(false);
-            this.tabEnergy.PerformLayout();
-            this.tabWeather.ResumeLayout(false);
-            this.tabWeather.PerformLayout();
-            this.tabShelter.ResumeLayout(false);
-            this.tabTourism.ResumeLayout(false);
-            this.tabOrders.ResumeLayout(false);
-            this.tabEvents.ResumeLayout(false);
-            this.tabSettings.ResumeLayout(false);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1125, 748);
+            Controls.Add(statusStrip1);
+            Controls.Add(tabMain);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Έξυπνο Camping — Προσομοίωση";
+            Load += MainForm_Load;
+            tabMain.ResumeLayout(false);
+            tabSetup.ResumeLayout(false);
+            tabSetup.PerformLayout();
+            tabLighting.ResumeLayout(false);
+            tabLighting.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)trkBrightness).EndInit();
+            tabEnergy.ResumeLayout(false);
+            tabEnergy.PerformLayout();
+            tabWeather.ResumeLayout(false);
+            tabWeather.PerformLayout();
+            tabShelter.ResumeLayout(false);
+            tabTourism.ResumeLayout(false);
+            tabOrders.ResumeLayout(false);
+            tabEvents.ResumeLayout(false);
+            tabSettings.ResumeLayout(false);
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -523,5 +549,6 @@ namespace SmartCampingApp
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolBattery;
         private System.Windows.Forms.ToolStripStatusLabel toolWeather;
+        private Button button1;
     }
 }
