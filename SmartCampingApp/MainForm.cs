@@ -146,5 +146,10 @@ namespace SmartCampingApp
         {
             MessageBox.Show("Αυτό προστέθηκε από Νίκο");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Αυτό προστέθηκε από Δημήτρη");
+        }
     }
 }

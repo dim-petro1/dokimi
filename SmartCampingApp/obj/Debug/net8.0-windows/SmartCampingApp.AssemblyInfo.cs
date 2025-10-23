@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartCampingApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f32e940d6d1b100814f44814b2acaddccf511447")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f27189cf749f77350c2a72d15a5be0c24e5250b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartCampingApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartCampingApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
