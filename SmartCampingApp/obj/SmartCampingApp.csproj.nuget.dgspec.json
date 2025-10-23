@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dpetr\\Desktop\\SmartCampingApp\\SmartCampingApp.csproj": {}
+    "C:\\Users\\Nikos\\Source\\Repos\\dokimi\\SmartCampingApp\\SmartCampingApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dpetr\\Desktop\\SmartCampingApp\\SmartCampingApp.csproj": {
+    "C:\\Users\\Nikos\\Source\\Repos\\dokimi\\SmartCampingApp\\SmartCampingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dpetr\\Desktop\\SmartCampingApp\\SmartCampingApp.csproj",
+        "projectUniqueName": "C:\\Users\\Nikos\\Source\\Repos\\dokimi\\SmartCampingApp\\SmartCampingApp.csproj",
         "projectName": "SmartCampingApp",
-        "projectPath": "C:\\Users\\dpetr\\Desktop\\SmartCampingApp\\SmartCampingApp.csproj",
-        "packagesPath": "C:\\Users\\dpetr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dpetr\\Desktop\\SmartCampingApp\\obj\\",
+        "projectPath": "C:\\Users\\Nikos\\Source\\Repos\\dokimi\\SmartCampingApp\\SmartCampingApp.csproj",
+        "packagesPath": "C:\\Users\\Nikos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nikos\\Source\\Repos\\dokimi\\SmartCampingApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\dpetr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nikos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

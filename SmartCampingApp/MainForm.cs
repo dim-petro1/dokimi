@@ -141,5 +141,10 @@ namespace SmartCampingApp
         {
             MessageBox.Show("Online Help\n\n— Χρησιμοποίησε τα Tabs για πλοήγηση.\n— Φωτισμός: Επίλεξε preset και ρύθμισε ένταση.\n— Ενέργεια: Ενεργοποίησε εξοικονόμηση για χαμηλότερη κατανάλωση.\n— Καιρός: Δες προτάσεις δράσης.\n— Καταφύγιο/Τουρισμός: Demo πλοήγησης.", "Βοήθεια", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Αυτό προστέθηκε από Νίκο");
+        }
     }
 }
