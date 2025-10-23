@@ -1,0 +1,14 @@
+C:\Users\dpetr\Desktop\SmartCampingApp\obj\Debug\net8.0-windows\SmartCampingApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dpetr\Desktop\SmartCampingApp\obj\Debug\net8.0-windows\SmartCampingApp.AssemblyInfoInputs.cache
+C:\Users\dpetr\Desktop\SmartCampingApp\obj\Debug\net8.0-windows\SmartCampingApp.AssemblyInfo.cs
+C:\Users\dpetr\Desktop\SmartCampingApp\obj\Debug\net8.0-windows\SmartCampingApp.csproj.CoreCompileInputs.cache
+C:\Users\dpetr\Desktop\SmartCampingApp\bin\Debug\net8.0-windows\SmartCampingApp.exe
+C:\Users\dpetr\Desktop\SmartCampingApp\bin\Debug\net8.0-windows\SmartCampingApp.deps.json
+C:\Users\dpetr\Desktop\SmartCampingApp\bin\Debug\net8.0-windows\SmartCampingApp.runtimeconfig.json
+C:\Users\dpetr\Desktop\SmartCampingApp\bin\Debug\net8.0-windows\SmartCampingApp.dll
+C:\Users\dpetr\Desktop\SmartCampingApp\bin\Debug\net8.0-windows\SmartCampingApp.pdb
+C:\Users\dpetr\Desktop\SmartCampingApp\obj\Debug\net8.0-windows\SmartCampingApp.dll
+C:\Users\dpetr\Desktop\SmartCampingApp\obj\Debug\net8.0-windows\refint\SmartCampingApp.dll
+C:\Users\dpetr\Desktop\SmartCampingApp\obj\Debug\net8.0-windows\SmartCampingApp.pdb
+C:\Users\dpetr\Desktop\SmartCampingApp\obj\Debug\net8.0-windows\SmartCampingApp.genruntimeconfig.cache
+C:\Users\dpetr\Desktop\SmartCampingApp\obj\Debug\net8.0-windows\ref\SmartCampingApp.dll

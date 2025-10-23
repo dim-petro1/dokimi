@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCampingApp", "SmartCampingApp.csproj", "{87AF29E1-C8F0-DEBA-D60F-89F3956B759A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87AF29E1-C8F0-DEBA-D60F-89F3956B759A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87AF29E1-C8F0-DEBA-D60F-89F3956B759A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87AF29E1-C8F0-DEBA-D60F-89F3956B759A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87AF29E1-C8F0-DEBA-D60F-89F3956B759A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E4135C4-007D-4EDB-9620-3C9999943546}
+	EndGlobalSection
+EndGlobal
